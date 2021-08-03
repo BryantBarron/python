@@ -95,49 +95,49 @@
 # else:
 #     print("Wrong pizza size")
 
-#python uses and not &&, or not ||, not instead of !
-#love calculator
-# calculator takes both peoples names and check fore the number of times the 
-# letters in the word TRUE occur. The check the number of times the letters 
-# in the world LOVE occur. Then combine these numbers to make a 2 digit 
-# number. Then give a rating off that number.
-# print("Welcome to the Love Calculator!")
-# name1 = input("What is your name? \n")
-# name2 = input("What is their name? \n")
+python uses and not &&, or not ||, not instead of !
+love calculator
+calculator takes both peoples names and check fore the number of times the 
+letters in the word TRUE occur. The check the number of times the letters 
+in the world LOVE occur. Then combine these numbers to make a 2 digit 
+number. Then give a rating off that number.
+print("Welcome to the Love Calculator!")
+name1 = input("What is your name? \n")
+name2 = input("What is their name? \n")
 
-# # name1.upper() DOESNT WORK
-# # REMEMBER .upper doesnt work just on the variable you must do it this way
-# name1 = name1.upper()
-# name2 = name2.upper()
+# name1.upper() DOESNT WORK
+# REMEMBER .upper doesnt work just on the variable you must do it this way
+name1 = name1.upper()
+name2 = name2.upper()
 
-# count_name1 = 0
-# count_name2 = 0
-# count = 0
+count_name1 = 0
+count_name2 = 0
+count = 0
 
-# for element in name1:
-#     # project doesnt tell us if we have to count the "E" twice or not so I am
-#     if((element == "T") or (element == "R") or (element == "U") or (element == "E")):
-#         count_name1 += 1
-#     if((element == "L") or (element == "O") or (element == "V") or (element == "E")):
-#         count_name1 += 1
+for element in name1:
+    # project doesnt tell us if we have to count the "E" twice or not so I am
+    if((element == "T") or (element == "R") or (element == "U") or (element == "E")):
+        count_name1 += 1
+    if((element == "L") or (element == "O") or (element == "V") or (element == "E")):
+        count_name1 += 1
 
-# for element in name2:
-#     # project doesnt tell us if we have to count the "E" twice or not so I am
-#     if((element == "T") or (element == "R") or (element == "U") or (element == "E")):
-#         count_name2 += 1
-#     if((element == "L") or (element == "O") or (element == "V") or (element == "E")):
-#         count_name2 += 1
-# # did this because you have to combine count 1 and 2s digits, figured it was 
-# # easier then converting to a character combining to a str then converting back 
-# # to a number, both of those wouldn't take into account what happens if you 
-# # an instance where some how someone has > 10 of these hits in their names
+for element in name2:
+    # project doesnt tell us if we have to count the "E" twice or not so I am
+    if((element == "T") or (element == "R") or (element == "U") or (element == "E")):
+        count_name2 += 1
+    if((element == "L") or (element == "O") or (element == "V") or (element == "E")):
+        count_name2 += 1
+# did this because you have to combine count 1 and 2s digits, figured it was 
+# easier then converting to a character combining to a str then converting back 
+# to a number, both of those wouldn't take into account what happens if you 
+# an instance where some how someone has > 10 of these hits in their names
 
-# count_name1 = count_name1 * 10
-# count = count_name1 + count_name2
+count_name1 = count_name1 * 10
+count = count_name1 + count_name2
 
-# if ((count < 10) and (count > 90)):
-#     print(f"Your score is {count}, you go together like coke and mentos")
-# elif((count >= 40) and (count <= 50)):
-#     print(f"Your score is {count}, you are alright together.")
-# else:
-#     print(f"Your score is {count}, we don't care about you.")
+if ((count < 10) and (count > 90)):
+    print(f"Your score is {count}, you go together like coke and mentos")
+elif((count >= 40) and (count <= 50)):
+    print(f"Your score is {count}, you are alright together.")
+else:
+    print(f"Your score is {count}, we don't care about you.")
