@@ -95,49 +95,92 @@
 # else:
 #     print("Wrong pizza size")
 
-python uses and not &&, or not ||, not instead of !
-love calculator
-calculator takes both peoples names and check fore the number of times the 
-letters in the word TRUE occur. The check the number of times the letters 
-in the world LOVE occur. Then combine these numbers to make a 2 digit 
-number. Then give a rating off that number.
-print("Welcome to the Love Calculator!")
-name1 = input("What is your name? \n")
-name2 = input("What is their name? \n")
+# python uses and not &&, or not ||, not instead of !
+# love calculator
+# calculator takes both peoples names and check fore the number of times the 
+# letters in the word TRUE occur. The check the number of times the letters 
+# in the world LOVE occur. Then combine these numbers to make a 2 digit 
+# number. Then give a rating off that number.
+# print("Welcome to the Love Calculator!")
+# name1 = input("What is your name? \n")
+# name2 = input("What is their name? \n")
 
-# name1.upper() DOESNT WORK
-# REMEMBER .upper doesnt work just on the variable you must do it this way
-name1 = name1.upper()
-name2 = name2.upper()
+# # name1.upper() DOESNT WORK
+# # REMEMBER .upper doesnt work just on the variable you must do it this way
+# name1 = name1.upper()
+# name2 = name2.upper()
 
-count_name1 = 0
-count_name2 = 0
-count = 0
+# count_name1 = 0
+# count_name2 = 0
+# count = 0
 
-for element in name1:
-    # project doesnt tell us if we have to count the "E" twice or not so I am
-    if((element == "T") or (element == "R") or (element == "U") or (element == "E")):
-        count_name1 += 1
-    if((element == "L") or (element == "O") or (element == "V") or (element == "E")):
-        count_name1 += 1
+# for element in name1:
+#     # project doesnt tell us if we have to count the "E" twice or not so I am
+#     if((element == "T") or (element == "R") or (element == "U") or (element == "E")):
+#         count_name1 += 1
+#     if((element == "L") or (element == "O") or (element == "V") or (element == "E")):
+#         count_name1 += 1
 
-for element in name2:
-    # project doesnt tell us if we have to count the "E" twice or not so I am
-    if((element == "T") or (element == "R") or (element == "U") or (element == "E")):
-        count_name2 += 1
-    if((element == "L") or (element == "O") or (element == "V") or (element == "E")):
-        count_name2 += 1
-# did this because you have to combine count 1 and 2s digits, figured it was 
-# easier then converting to a character combining to a str then converting back 
-# to a number, both of those wouldn't take into account what happens if you 
-# an instance where some how someone has > 10 of these hits in their names
+# for element in name2:
+#     # project doesnt tell us if we have to count the "E" twice or not so I am
+#     if((element == "T") or (element == "R") or (element == "U") or (element == "E")):
+#         count_name2 += 1
+#     if((element == "L") or (element == "O") or (element == "V") or (element == "E")):
+#         count_name2 += 1
+# # did this because you have to combine count 1 and 2s digits, figured it was 
+# # easier then converting to a character combining to a str then converting back 
+# # to a number, both of those wouldn't take into account what happens if you 
+# # an instance where some how someone has > 10 of these hits in their names
 
-count_name1 = count_name1 * 10
-count = count_name1 + count_name2
+# count_name1 = count_name1 * 10
+# count = count_name1 + count_name2
 
-if ((count < 10) and (count > 90)):
-    print(f"Your score is {count}, you go together like coke and mentos")
-elif((count >= 40) and (count <= 50)):
-    print(f"Your score is {count}, you are alright together.")
+# if ((count < 10) and (count > 90)):
+#     print(f"Your score is {count}, you go together like coke and mentos")
+# elif((count >= 40) and (count <= 50)):
+#     print(f"Your score is {count}, you are alright together.")
+# else:
+#     print(f"Your score is {count}, we don't care about you.")
+
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
+
+choice1 = input("Left or Right ").lower()
+if choice1 == "left":
+    choice2 = input("Swim or wait ").lower()
+    if choice2 == "wait":
+        choice3 =input("Which door? Red, Yellow, or Blue? ").lower()
+        if choice3 == "red":
+            print("Burned by fire. GAME OVER!!!")
+        elif choice3 == "blue":
+            print("Eaten by Beasts. GAME OVER!!!")
+        elif choice3 == "yellow":
+            print("YOU WIN!!!!")
+        else:
+            print("Wrong Choice!!! GAME OVER!!!")
+    else:
+        print("Attacked by trout! GAME OVER!!!")
 else:
-    print(f"Your score is {count}, we don't care about you.")
+    print("You've fallen into a well. Call Lassie, GAME OVER!!!")
