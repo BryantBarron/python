@@ -24,6 +24,25 @@ import my_module
 # else:
 #     print("Broken")
 
-state1 = "Delaware"
-state2 = "Pennsylvania"
+# state1 = "Delaware"
+# state2 = "Pennsylvania"
+# states_of_america = [ "Delaware", "Pennsylvania", "California", "Arizona", "Texas"]
 
+# print(states_of_america) #prints array of states
+# print(states_of_america[0]) #prints the first item in the array
+# print(states_of_america[-1]) #prints the last item in the array, negatives move from the end of the array in
+# print(states_of_america[-2])
+
+# states_of_america.append("Hawaii") # adds a single item to the end of the array
+# print(states_of_america)
+
+#code challenge Banker Roullete
+names_string = input("Give me everybody's names, seperated by a comma. ")
+
+names = names_string.split(", ")
+
+#number of people
+num = len(names)
+#unlucky person is
+unlucky = random.randint(1, num)
+print(f"Person paying the bill is: {names[unlucky]}.")
