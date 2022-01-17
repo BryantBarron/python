@@ -63,6 +63,7 @@
 #         print(i)
 
 #Password Generator Project
+
 import random
 letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
@@ -75,6 +76,27 @@ nr_numbers = int(input(f"How many numbers would you like?\n"))
 
 password = []
 
-for i in range(1, len(nr_letters)):
+for char in range(0, nr_letters):
+    random_letter = random.choice(letters)
+    password += random_letter
     
+for char in range(0, nr_symbols):
+    random_symbol = random.choice(symbols)
+    password += random_symbol
 
+for char in range(0, nr_numbers):
+    random_number = random.choice(numbers)
+    password += random_number
+    
+password_string = ''
+for char in password:
+    password_string += char
+
+print(f"Your generated password is: {password_string}")
+ 
+#if you want the order randomized for the password 
+random_password = password
+random.shuffle(random_password)
+random_password_str = ''.join(random_password)
+
+print(f"Your random generated password is: {random_password_str}")
