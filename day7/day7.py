@@ -1,11 +1,12 @@
 #hangman game
 import random
 
-word_list = ["everquest", "futurama", "league", "yellowstone", "mammoth"]
+from hangman_art import logo, stages
+from hangman_words import word_list
 
 game_word = random.choice(word_list)
 
-print("Welcome to hangman.\n")
+print(logo)
 
 word = []
 correct_guesses = []
@@ -45,6 +46,8 @@ while not end_of_game:
     else:
         print("The letter you guessed is NOT in the word!")
         incorrect_guesses += guess
+        index = incorrect_guesses.index(guess)
+        print(stages[index])
         print(f"Here are your guesses so far: {incorrect_guesses}")
         if(len(incorrect_guesses) == 5):
             print("You have killed your hangman!")
