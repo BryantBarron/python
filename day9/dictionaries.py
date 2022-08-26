@@ -18,8 +18,13 @@ programming_dictionary["Bug"] = "Test"
 print(programming_dictionary)
 
 #loop through a dictionary
-for thing in programming_dictionary:
-    #only prints the key, not the value in the key
-    print(thing)
-    #to get value in key
-    print(programming_dictionary[thing])
+# for thing in programming_dictionary:
+#     #only prints the key, not the value in the key
+#     print(thing)
+#     #to get value in key
+#     print(programming_dictionary[thing])
+
+#cleaned up
+for key in programming_dictionary:
+    print(key)
+    print(programming_dictionary[key])
